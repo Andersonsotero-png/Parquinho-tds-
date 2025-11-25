@@ -1,0 +1,51 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+header {
+  background: #3a8;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+nav button {
+  background: transparent;
+  border: none;
+  color: white;
+  margin: 0 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+nav button.active {
+  border-bottom: 2px solid white;
+}
+main {
+  padding: 1rem;
+}
+.tab {
+  display: none;
+}
+.tab.active {
+  display: block;
+}
+form label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+form input {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.2rem;
+}
+button[type="submit"], #btnImprimir {
+  background: #3a8;
+  border: none;
+  color: white;
+  padding: 0.7rem 1rem;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+#qrCodeCadastro {
+  margin-top: 1rem;
+}
