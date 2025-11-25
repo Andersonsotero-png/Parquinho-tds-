@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Parquinho App Completo</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="manifest" href="manifest.json" />
+</head>
+<body>
+  <header>
+    <h1>Parquinho App</h1>
+    <nav>
+      <button data-tab="cadastro" class="active">Cadastro</button>
+      <button data-tab="busca">Busca</button>
+      <button data-tab="historico">Histórico</button>
+      <button data-tab="marketing">Marketing</button>
+      <button data-tab="impressao">Impressão</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="cadastro" class="tab active">
+      <form id="formCadastro">
+        <label>
+          Nome completo:
+          <input type="text" name="nome" required />
+        </label>
+        <label>
+          Data de nascimento:
+          <input type="date" name="dataNascimento" required />
+        </label>
+        <label>
+          Idade:
+          <input type="number" name="idade" readonly />
+        </label>
+        <label>
+          Telefone:
+          <input type="tel" name="telefone" />
+        </label>
+        <label>
+          Email:
+          <input type="email" name="email" />
+        </label>
+        <button type="submit">Cadastrar</button>
+      </form>
+      <div id="qrCodeCadastro"></div>
+    </section>
+
+    <section id="busca" class="tab">
+      <input type="text" id="inputBusca" placeholder="Buscar por nome..." />
+      <ul id="listaBusca"></ul>
+    </section>
+
+    <section id="historico" class="tab">
+      <ul id="listaHistorico"></ul>
+    </section>
+
+    <section id="marketing" class="tab">
+      <h2>Promoções e Notícias</h2>
+      <div id="marketingContent">Nenhum conteúdo disponível.</div>
+    </section>
+
+    <section id="impressao" class="tab">
+      <button id="btnImprimir">Imprimir Cadastro</button>
+      <div id="conteudoImpressao"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
